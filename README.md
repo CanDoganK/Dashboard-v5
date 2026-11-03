@@ -23,3 +23,14 @@ Ardından tarayıcıda http://localhost:5173 adresini açın.
 - `src/App.jsx`: ana sayfa ve kart verileri
 - `src/components/StatsCard.jsx`: istatistik kartı bileşeni
 - `src/index.css`: Tailwind ve `glass-card` stili
+
+## Sunucuda çalıştırma (şifre korumalı)
+
+```bash
+npm run build
+set PANEL_USER=kullaniciadi
+set PANEL_PASS=guclu-bir-sifre
+npm start
+```
+
+`server.js`, `dist/` klasörünü 80 numaralı portta kullanıcı adı ve şifreyle sunar. Şifre ayarlanmazsa sunucu başlamaz. Port değiştirmek için `PORT` değişkenini ayarlayın.

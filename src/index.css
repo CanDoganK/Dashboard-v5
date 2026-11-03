@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  @apply min-h-screen bg-slate-900;
+}
+
+.glass-card {
+  @apply bg-white/10 backdrop-blur-lg border border-white/20;
+}

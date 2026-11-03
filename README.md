@@ -1,16 +1,25 @@
-# React + Vite
+# Dashboard v5
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React, Vite, Tailwind CSS, framer-motion ve lucide-react ile yapılmış bir kontrol paneli.
 
-Currently, two official plugins are available:
+## Kurulum
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Ardından tarayıcıda http://localhost:5173 adresini açın.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Komutlar
 
-## Expanding the Oxlint configuration
+- `npm run dev`: geliştirme sunucusunu başlatır
+- `npm run build`: yayın için `dist/` klasörüne derler
+- `npm run preview`: derlenmiş sürümü önizler
+- `npm run lint`: kodu kontrol eder
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Yapı
+
+- `src/App.jsx`: ana sayfa ve kart verileri
+- `src/components/StatsCard.jsx`: istatistik kartı bileşeni
+- `src/index.css`: Tailwind ve `glass-card` stili

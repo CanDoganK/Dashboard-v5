@@ -10,7 +10,7 @@ const stats = [
 export default function App() {
   return (
     <main className="p-8">
-      <h1 className="mb-6 text-3xl font-bold text-white">Dashboard</h1>
+      <h1 className="mb-6 text-3xl font-bold text-white">Kontrol Paneli</h1>
       <div className="grid gap-6 md:grid-cols-3">
         {stats.map((stat) => (
           <StatsCard key={stat.title} {...stat} />
